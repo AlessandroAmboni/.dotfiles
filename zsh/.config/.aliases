@@ -1,0 +1,2 @@
+alias ls='exa --icons'
+alias go='cd $HOME/.cfg'
