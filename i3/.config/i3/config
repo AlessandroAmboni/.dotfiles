@@ -39,6 +39,9 @@ exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 #workspace icons on polybar https://github.com/justbuchanan/i3scripts/blob/master/rename_workspace.py
 exec_always ~/.config/i3/scripts/autoname_workspaces.py --norenumber_workspaces &
 
+#launch nitrogen
+exec_always --no-startup-id nitrogen --restore &
+bindsym $mod+Shift+p exec --no-startup-id nitrogen --set-zoom-fill --random ~/Pictures/wallpapers
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -201,10 +204,16 @@ bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/flameshotScree
 # ║ STYLING ║
 # ╚═════════╝
 
+# smart gaps
+gaps inner 2
+gaps outer 0
+smart_gaps on
+
+# border size
 for_window [class="^.*"] border pixel 1
 
 # class                 border  bground text    indicator child_border
-client.focused          #83CAFA #51A2DA #FFFFFF #83CAFA   #51A2DA
+client.focused          #fba922 #51A2DA #FFFFFF #fba922   #fba922
 client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #8C8C8C
 client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
 client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
