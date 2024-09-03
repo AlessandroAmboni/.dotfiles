@@ -37,7 +37,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 
 #workspace icons on polybar https://github.com/justbuchanan/i3scripts/blob/master/rename_workspace.py
-exec_always ~/.config/i3/scripts/autoname_workspaces.py &
+exec_always ~/.config/i3/scripts/autoname_workspaces.py ----norenumber_workspaces &
 
 
 # Use pactl to adjust volume in PulseAudio.
@@ -62,9 +62,9 @@ bindsym $mod+q kill
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+ccedilla focus right
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+bindsym $mod+k focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -90,8 +90,8 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
+# swap to last active workspace
 bindsym $mod+Tab workspace back_and_forth
-
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle

@@ -64,7 +64,7 @@ DEFAULT_ICON = ''
 # Global setting that determines whether workspaces will be automatically
 # re-numbered in ascending order with a "gap" left on each monitor. This is
 # overridden via command-line flag.
-RENUMBER_WORKSPACES = True
+RENUMBER_WORKSPACES = False
 
 
 def ensure_window_icons_lowercase():
