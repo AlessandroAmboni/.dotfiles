@@ -30,6 +30,12 @@ exec_always --no-startup-id setxkbmap -layout br
 # lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# start picom
+exec_always --no-startup-id picom
+
+#exec alttab
+exec_always --no-startup-id alttab -fg "#00366F" -bg "#00FFFFFF" -frame "#00366F" -t 128x150 -i 127x64
+
 # NetworkManager environment-independent system tray GUI
 exec --no-startup-id nm-applet
 
@@ -210,12 +216,12 @@ gaps outer 0
 smart_gaps on
 
 # border size
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # class                 border  bground text    indicator child_border
-client.focused          #fba922 #51A2DA #FFFFFF #fba922   #fba922
-client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #8C8C8C
-client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
+client.focused          #00366F #51A2DA #FFFFFF #00366F   #00366F
+client.focused_inactive #02060e #4C4C4C #FFFFFF #4C4C4C   #02060e
+client.unfocused        #02060e #222222 #888888 #292D2E   #02060e
 client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
