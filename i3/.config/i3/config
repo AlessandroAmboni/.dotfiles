@@ -37,7 +37,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 
 #workspace icons on polybar https://github.com/justbuchanan/i3scripts/blob/master/rename_workspace.py
-exec_always ~/.config/i3/scripts/autoname_workspaces.py ----norenumber_workspaces &
+exec_always ~/.config/i3/scripts/autoname_workspaces.py --norenumber_workspaces &
 
 
 # Use pactl to adjust volume in PulseAudio.
