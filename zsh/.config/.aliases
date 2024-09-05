@@ -1,2 +1,3 @@
 alias ls='exa --icons'
 alias go='cd $HOME/.cfg'
+alias get-window-info='xprop | awk -F" = " '\''/WM_NAME/ {print "Window Name: " $2} /WM_CLASS/ {print "Window Class: " $2}'\'''
