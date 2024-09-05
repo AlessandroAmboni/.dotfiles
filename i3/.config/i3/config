@@ -66,6 +66,8 @@ exec_always --no-startup-id autotiling.py
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+bindsym $mod+Shift+t [title="Picture-in-Picture"] sticky toggle
+
 # kill focused window
 bindsym $mod+q kill
 
