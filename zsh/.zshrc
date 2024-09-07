@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 
-#add ~/.local/bin to path
+# add ~/.local/bin to path
 export PATH=$HOME/.local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
