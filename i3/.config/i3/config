@@ -34,7 +34,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id picom
 
 #exec alttab
-exec_always --no-startup-id alttab -fg "#00366F" -bg "#00FFFFFF" -frame "#00366F" -t 128x150 -i 127x64
+exec_always alttab -fg "#00366F" -bg "#00FFFFFF" -frame "#00366F" -t 128x150 -i 127x64
 
 # NetworkManager environment-independent system tray GUI
 exec --no-startup-id nm-applet
