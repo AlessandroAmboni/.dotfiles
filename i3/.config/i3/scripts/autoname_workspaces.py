@@ -34,7 +34,7 @@ import i3ipc
 import logging
 import signal
 import sys
-import fontawesome as fa
+
 
 from util import *
 
@@ -50,7 +50,7 @@ from util import *
 # then click on the application you want to inspect.
 WINDOW_ICONS = {
     'spotify': '',  # could also use the 'spotify' icon
-    'org.mozilla.firefox': '',
+    'Firefox-esr': '',
     'code': '󰨞',
     'remnote': '󰠮',
     'kitty': '',
