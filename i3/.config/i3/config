@@ -219,6 +219,18 @@ bindsym $mod+f exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg 
 # ║ STYLING ║
 # ╚═════════╝
 
+# smart gaps
+gaps inner 2
+gaps outer 0
+smart_gaps on
+
+# border size
+for_window [class="^.*"] border pixel 1
+
+# make certains windows floating by default
+for_window [class="Nm-connection-editor"] floating enable
+
+
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
 set $pink #f5c2e7
@@ -245,16 +257,6 @@ set $surface0 #313244
 set $base #1e1e2e
 set $mantle #181825
 set $crust #11111b
-
-
-# smart gaps
-gaps inner 2
-gaps outer 0
-smart_gaps on
-
-# border size
-for_window [class="^.*"] border pixel 1
-
 
 # target                 title     bg    text   indicator  border
 client.focused           $mauve    $base $text  $rosewater $mauve
