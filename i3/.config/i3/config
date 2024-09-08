@@ -203,6 +203,8 @@ bindsym $mod+r mode "resize"
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id $terminal
+# start kitty on floating mode
+bindsym $mod+Shift+Return exec --no-startup-id kitty --class kitty-floating
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
@@ -229,7 +231,7 @@ for_window [class="^.*"] border pixel 1
 
 # make certains windows floating by default
 for_window [class="Nm-connection-editor"] floating enable
-
+for_window [class="kitty-floating"] floating enable
 
 set $rosewater #f5e0dc
 set $flamingo #f2cdcd
