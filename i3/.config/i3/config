@@ -216,7 +216,10 @@ bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/flameshotScree
 bindsym $mod+c exec --no-startup-id i3-msg '[class="Code"]' focus || (i3-msg workspace "8: 󰘐" && i3-msg exec 'code')
 
 # launch firefox on workspace 7 if not already running and focus it
-bindsym $mod+f exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg workspace "7: 󰎉" && i3-msg exec 'firefox')
+bindsym $mod+f exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg workspace "7:" && i3-msg exec 'firefox')
+
+#power menu
+bindsym $mod+Shift+q exec --no-startup-id /home/alessandro/.dotfiles/i3/.config/i3/scripts/rofiPowerMenu.sh &
 # ╔═════════╗
 # ║ STYLING ║
 # ╚═════════╝
