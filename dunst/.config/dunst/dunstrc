@@ -1,0 +1,23 @@
+[global]
+
+frame_color = "#cba6f7"
+frame_width = 1
+separator_color= frame
+
+min_icon_size = 36
+max_icon_size = 100
+
+[urgency_low]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+timeout = 5
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+timeout = 5
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#fab387"
