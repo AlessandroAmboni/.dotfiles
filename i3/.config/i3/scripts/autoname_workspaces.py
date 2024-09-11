@@ -55,6 +55,7 @@ WINDOW_ICONS = {
     'remnote': '󰠮',
     'kitty': '',
     'xfce4-terminal': '',
+    'PacketTracer': '',
     
 }
 

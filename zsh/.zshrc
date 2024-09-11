@@ -11,7 +11,8 @@ fi
 
 # add ~/.local/bin to path
 export PATH=$HOME/.local/bin:$PATH
-
+# add snap bin to path
+export PATH=$PATH:/snap/bin
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
