@@ -24,6 +24,9 @@ set $terminal kitty
 exec_always --no-startup-id pkill dunst
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc &
 
+# tap to touch on notebook touchpad
+exec_always --no-startup-id xinput --set-prop 15 347 1
+
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
