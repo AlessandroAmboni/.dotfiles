@@ -235,9 +235,9 @@ bindsym $mod+Shift+q exec --no-startup-id /home/alessandro/.dotfiles/i3/.config/
 # ╚═════════╝
 
 # smart gaps
-gaps inner 2
+gaps inner 6
 gaps outer 0
-smart_gaps on
+
 
 # border size
 for_window [class="^.*"] border pixel 1
