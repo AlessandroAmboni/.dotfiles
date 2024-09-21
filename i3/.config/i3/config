@@ -240,7 +240,7 @@ gaps outer 0
 
 
 # border size
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 # make certains windows floating by default
 for_window [class="Nm-connection-editor"] floating enable
