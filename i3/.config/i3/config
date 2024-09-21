@@ -113,7 +113,7 @@ bindsym $mod+v split v
 bindsym $mod+Tab workspace back_and_forth
 
 # enter fullscreen mode for the focused container
-# bindsym $mod+f fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
@@ -226,7 +226,7 @@ bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/flameshotScree
 bindsym $mod+c exec --no-startup-id i3-msg '[class="Code"]' focus || (i3-msg workspace "8: 󰘐" && i3-msg exec 'code')
 
 # launch firefox on workspace 7 if not already running and focus it
-bindsym $mod+f exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg workspace "7:" && i3-msg exec 'firefox')
+bindsym $mod+e exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg workspace "7:" && i3-msg exec 'firefox')
 
 #power menu
 bindsym $mod+Shift+q exec --no-startup-id /home/alessandro/.dotfiles/i3/.config/i3/scripts/rofiPowerMenu.sh &
@@ -238,9 +238,11 @@ bindsym $mod+Shift+q exec --no-startup-id /home/alessandro/.dotfiles/i3/.config/
 gaps inner 6
 gaps outer 0
 
+# hide edge borders
+hide_edge_borders smart
 
 # border size
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 
 # make certains windows floating by default
 for_window [class="Nm-connection-editor"] floating enable
