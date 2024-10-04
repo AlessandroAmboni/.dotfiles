@@ -25,7 +25,7 @@ exec_always --no-startup-id pkill dunst
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc &
 
 # tap to touch on notebook touchpad
-exec_always --no-startup-id xinput --set-prop 15 347 1
+exec_always --no-startup-id xinput --set-prop 13 345 1
 
 
 # Start XDG autostart .desktop files using dex. See also
@@ -237,6 +237,9 @@ bindsym $mod+Shift+q exec --no-startup-id /home/alessandro/.dotfiles/i3/.config/
 # smart gaps
 gaps inner 6
 gaps outer 0
+
+#enable smarp gaps
+smart_gaps on
 
 # hide edge borders
 hide_edge_borders smart
