@@ -13,8 +13,12 @@ fi
 export PATH=$HOME/.local/bin:$PATH
 # add snap bin to path
 export PATH=$PATH:/snap/bin
+# add bin packaged to PATH
+export PATH="$PATH:$HOME/go/bin"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
