@@ -25,7 +25,7 @@ exec_always --no-startup-id pkill dunst
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc &
 
 # tap to touch on notebook touchpad
-exec_always --no-startup-id xinput --set-prop 13 345 1
+exec_always --no-startup-id xinput --set-prop 15 345 1
 
 
 # Start XDG autostart .desktop files using dex. See also
@@ -113,7 +113,7 @@ bindsym $mod+v split v
 bindsym $mod+Tab workspace back_and_forth
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+e fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
@@ -226,7 +226,7 @@ bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/flameshotScree
 bindsym $mod+c exec --no-startup-id i3-msg '[class="Code"]' focus || (i3-msg workspace "8: 󰘐" && i3-msg exec 'code')
 
 # launch firefox on workspace 7 if not already running and focus it
-bindsym $mod+e exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg workspace "7:" && i3-msg exec 'firefox')
+bindsym $mod+f exec --no-startup-id i3-msg '[class="Firefox"]' focus || (i3-msg workspace "7:" && i3-msg exec 'firefox')
 
 #power menu
 bindsym $mod+Shift+q exec --no-startup-id /home/alessandro/.dotfiles/i3/.config/i3/scripts/rofiPowerMenu.sh &
